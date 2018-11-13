@@ -1,3 +1,4 @@
+/*
 var electrum_servers_list = {
   "ARG": [{"electrum2.cipig.net":10068},{"electrum1.cipig.net":10068}],
   "BCBC": [{"bsmn0.cleanblockchain.io":50001},{"bsmn1.cleanblockchain.org":50001}],
@@ -27,6 +28,7 @@ var electrum_servers_list = {
   "ETOMIC": [{"electrum2.cipig.net": 10025},{"electrum1.cipig.net": 10025}],
   "FAIR": [{"electrum2.cipig.net":10063},{"electrum1.cipig.net":10063}],
   "FJC": [{"electrumx3.fujicoin.org": 50001}, {"electrumx2.fujicoin.org": 50001}, {"electrumx1.fujicoin.org": 50001}],
+  "GAME": [{"electrum2.cipig.net":10072},{"electrum1.cipig.net":10072}],
   "GRS": [{"electrum10.groestlcoin.org":50001},{"electrum11.groestlcoin.org":50001},{"electrum13.groestlcoin.org":50001},{"electrum14.groestlcoin.org":50001}],
   "HODL": [{"electrum2.cipig.net":10009},{"electrum1.cipig.net":10009}],
   "HODLC": [{"hodl2.amit.systems":17989},{"hodl.amit.systems":17989}],
@@ -52,7 +54,9 @@ var electrum_servers_list = {
   "VTC": [{"electrum2.cipig.net":10071},{"electrum1.cipig.net":10071}],
   "WLC": [{"electrum2.cipig.net": 10014},{"electrum1.cipig.net": 10014}],
   "ZCL": [{"electrum2.cipig.net": 10055},{"electrum1.cipig.net": 10055}],
-  "ZEC": [{"electrum2.cipig.net":10058},{"electrum1.cipig.net":10058}]
+  "ZEC": [{"electrum2.cipig.net":10058},{"electrum1.cipig.net":10058}],
+  "CHAIN": [{"electrum1.chainmakers.co":55417}, {"electrum2.chainmakers.co":55417}],
+  "RUM": [{"195.201.219.118":70025}]
 }
 
 
@@ -72,3 +76,6 @@ function get_random_electrum_server(coin) {
   return_data.port = select_random_server[ipaddr[0]];
   return return_data;
 }
+
+
+*/

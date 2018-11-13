@@ -30,8 +30,8 @@ To get started, follow these steps:
 ```shell
 git clone https://github.com/KomodoPlatform/BarterDEX.git
 cd BarterDEX
-git pull
 git checkout dev
+git pull
 npm install
 npm start
 ```
@@ -76,6 +76,23 @@ If your wallet is encrypted, the app will not work with it. This feature will be
 ### **Build the App**
 Refer to the original [electron-packager](https://github.com/electron-userland/electron-packager) repository for more detailed information.
 
+
+##### Quick Build Instructions
+Make sure you have already done `npm install` or `npm upgrade` before executing these commands:
+
+```shell
+cd BarterDEX
+
+# Linux
+npm run package:linux
+
+# Mac
+npm run package:mac
+
+# Windows
+npm run package:win
+```
+
 ##### Linux
 Change directory to BarterDEX and execute the following command to build the Linux app
 ```shell
@@ -92,9 +109,9 @@ electron-packager . --platform=darwin --arch=x64 --icon=assets/icons/barterdex/b
 ```
 
 ##### Windows
-Change directory to iguana and execute the following command to build the Windows app
+Change directory to BarterDEX and execute the following command to build the Windows app
 ```shell
-dir iguana
+dir BarterDEX
 electron-packager . --platform=win32 --arch=x64 --icon=assets/icons/barterdex/barterdex.ico --out=build/ --buildVersion=VERSION_NUMBER_HERE --ignore=assets/bin/osx --ignore=assets/bin/linux64 --overwrite
 
 # If generating 32bit desktop package
